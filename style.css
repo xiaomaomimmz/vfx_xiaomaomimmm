@@ -114,9 +114,12 @@ ul {
    ============================================================ */
 .container {
   width: 100%;
-  max-width: 1240px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+.works .container {
+  max-width: none;
 }
 
 /* ============================================================
@@ -597,34 +600,71 @@ ul {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  color: var(--text);
+  background: rgba(15, 17, 26, 0.8);
+  border: 2px solid var(--accent);
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all var(--trans);
   z-index: 10;
-  opacity: 0.9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .works-arrow:hover {
-  background: var(--accent);
+  background: rgba(74, 222, 128, 0.2);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--accent);
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 6px 20px rgba(74, 222, 128, 0.4);
+  box-shadow: 0 0 30px rgba(74, 222, 128, 0.6);
+}
+
+.arrow-icon {
+  animation: arrowIconMove 1.5s infinite;
+}
+
+.works-arrow-left .arrow-icon {
+  animation: arrowIconMoveLeft 1.5s infinite;
+}
+
+.works-arrow-right .arrow-icon {
+  animation: arrowIconMoveRight 1.5s infinite;
+}
+
+@keyframes arrowIconMoveLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes arrowIconMoveRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
 }
 
 .works-arrow-left {
-  left: -60px;
+  left: 0px;
 }
 
 .works-arrow-right {
-  right: -60px;
+  right: 0px;
 }
 
 .about {
@@ -740,8 +780,8 @@ ul {
 
 .work-card {
   position: relative;
-  flex: 0 0 260px;
-  max-width: 260px;
+  flex: 1 1 260px;
+  min-width: 260px;
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
