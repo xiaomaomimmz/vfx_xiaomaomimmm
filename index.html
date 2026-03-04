@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小猫咪喵喵喵 — 游戏特效作品集</title>
+    <meta name="description" content="小猫咪喵喵喵的系列游戏特效展示，致力于自然、冰、火、光、暗等元素的视觉表现。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- ===================== BACKGROUND ===================== -->
+<canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a class="nav-logo" href="#hero">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">小猫咪<strong>喵喵喵</strong></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#works" class="nav-link">作品</a></li>
+            <li><a href="#about" class="nav-link">关于</a></li>
+            <li><a href="#contact" class="nav-link">联系</a></li>
+        </ul>
+        <button class="nav-burger" id="navBurger" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <p class="hero-eyebrow">Visual Effects Portfolio</p>
+        <h1 class="hero-title">小猫咪喵喵喵<br /><em>特效作品集</em></h1>
+        <div class="hero-actions">
+            <button class="btn-primary"
+                onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'})">浏览作品</button>
+            <button class="btn-ghost"
+                onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">关于我</button>
+        </div>
+    </div>
+    <a class="hero-scroll" href="#works" aria-label="向下滚动">
+        <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+        </div>
+        <span class="scroll-text">SCROLL</span>
+    </a>
+</section>
+
+<!-- ===================== WORKS ===================== -->
+<section class="works" id="works">
+    <div class="section-bar">
+        <span class="section-bar-title">SuperHero 系列</span>
+    </div>
+    <div class="container" id="worksContainer">
+        <!-- Works Grid -->
+        <div class="works-slider-wrapper">
+            <button class="works-arrow works-arrow-left" id="worksArrowLeft" aria-label="向左滑动">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </button>
+            <div class="works-grid works-scrollbar-hide" id="worksGrid">
+
+            <!-- Light -->
+            <div class="work-card" data-category="light">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-光-Hero0250.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-light">光</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-光-Hero0250</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Light</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="light">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-光-Hero0274.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-light">光</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-光-Hero0274</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Light</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="light">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-光-Hero0335.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-light">光</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-光-Hero0335</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Light</span></div>
+                </div>
+            </div>
+
+            <!-- Ice -->
+            <div class="work-card" data-category="ice">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-冰-Hero0254.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-ice">冰</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-冰-Hero0254</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Ice</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="ice">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-冰-Hero0262.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-ice">冰</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-冰-Hero0262</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Ice</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="ice">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-冰-Hero0280.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-ice">冰</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-冰-Hero0280</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Ice</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="ice">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-冰-Hero0283.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-ice">冰</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-冰-Hero0283</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Ice</span></div>
+                </div>
+            </div>
+
+            <!-- Dark -->
+            <div class="work-card" data-category="dark">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-暗-Hero0275.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-dark">暗</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-暗-Hero0275</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Dark</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="dark">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-暗-Hero0276.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-dark">暗</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-暗-Hero0276</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Dark</span></div>
+                </div>
+            </div>
+
+            <!-- Fire -->
+            <div class="work-card" data-category="fire">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-火-Hero0251.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-fire">火</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-火-Hero0251</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Fire</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="fire">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-火-Hero0263.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-fire">火</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-火-Hero0263</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Fire</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="fire">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-火-Hero0303.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-fire">火</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-火-Hero0303</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Fire</span></div>
+                </div>
+            </div>
+
+            <!-- Nature -->
+            <div class="work-card" data-category="nature">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-自然-Hero0255.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-nature">自然</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-自然-Hero0255</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Nature</span></div>
+                </div>
+            </div>
+
+            <div class="work-card" data-category="nature">
+                <div class="card-img-wrap">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/SuperHero-自然-Hero0334.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-overlay">
+                        <button class="card-view-btn" aria-label="查看详情">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="card-badge badge-nature">自然</span>
+                </div>
+                <div class="card-info">
+                    <h3>SuperHero-自然-Hero0334</h3>
+                    <div class="card-tags"><span>SuperHero</span><span>Nature</span></div>
+                </div>
+            </div>
+        </div> <!-- /works-grid -->
+        <button class="works-arrow works-arrow-right" id="worksArrowRight" aria-label="向右滑动">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6" />
+            </svg>
+        </button>
+    </div> <!-- /works-slider-wrapper -->
+    </div> <!-- /container -->
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+    <div class="section-bar">
+        <span class="section-bar-title">关于我</span>
+    </div>
+    <div class="container about-inner">
+        <div class="about-visual">
+            <div class="about-img-frame">
+                <img src="images/特效师头像.jpg" alt="小猫咪喵喵喵的头像" />
+                <div class="about-img-deco"></div>
+            </div>
+            <div class="about-tools">
+                <div class="tool-chip">Unity Effect</div>
+                <div class="tool-chip">VFX Effect</div>
+                <div class="tool-chip">Shader Graph</div>
+                <div class="tool-chip">Spine</div>
+                <div class="tool-chip">Photoshop</div>
+                <div class="tool-chip">AI工具</div>
+            </div>
+        </div>
+        <div class="about-text">
+            <p class="section-eyebrow">ABOUT ME</p>
+            <h2 class="section-title left">小猫咪喵喵喵</h2>
+            <p>我是一名专注于游戏实时特效的视觉艺术家喵！拥有 <strong>10 年+</strong>行业经验，深耕<strong>休闲手游</strong>领域，精通从概念设计到最终实现的完整特效管线，包括技能、环境、UI 与角色特效全流程喵~
+            </p>
+            <p>擅长使用 <strong>Unity Effect</strong>、<strong>VFX Graph</strong>、<strong>Shader Graph</strong> 等前沿技术打造惊艳视觉效果，同时熟练运用 Photoshop、Spine 及 AI 辅助工具，确保高效产出符合项目调性的优质资源喵！</p>
+            <p>我始终坚持：好的特效不是简单的视觉堆砌，而是服务于核心玩法与叙事体验的艺术表达。每一个粒子、每一次光影变化，都旨在传递产品独特的情感内核，为玩家创造沉浸式的游戏体验喵~</p>
+            <div class="about-skills">
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>粒子系统设计</span><span>98%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="98"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>自定义着色器</span><span>66%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="66"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>性能优化</span><span>85%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+    <div class="section-bar">
+        <span class="section-bar-title">联系我</span>
+    </div>
+    <div class="container">
+
+        <div class="contact-card-simple">
+            <div class="contact-grid">
+                <div class="contact-tile">
+                    <span class="tile-icon">📱</span>
+                    <p class="tile-label">手机号</p>
+                    <p class="tile-value">18513418090</p>
+                </div>
+                <div class="contact-tile">
+                    <span class="tile-icon">✉️</span>
+                    <p class="tile-label">邮箱</p>
+                    <a href="mailto:709168163@qq.com" class="tile-value">709168163@qq.com</a>
+                </div>
+                <div class="contact-tile">
+                    <span class="tile-icon">📍</span>
+                    <p class="tile-label">所在地</p>
+                    <p class="tile-value">中国 · 北京</p>
+                </div>
+                <div class="contact-tile">
+                    <span class="tile-icon">🕒</span>
+                    <p class="tile-label">响应时间</p>
+                    <p class="tile-value">通常 24 小时内</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <a class="nav-logo" href="#hero">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">小猫咪<strong>喵喵喵</strong></span>
+        </a>
+        <p class="footer-copy">© 2026 VFX Artist Portfolio. 保留所有权利。</p>
+        <p class="footer-made">Crafted with ♥ for games</p>
+    </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="作品详情">
+    <button class="lightbox-close" id="lightboxClose" aria-label="关闭">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="上一个">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="下一个">›</button>
+    <div class="lightbox-content" id="lightboxContent">
+        <!-- media injected here by JS: <img> or <video controls> -->
+        <div id="lightboxMedia"></div>
+        <div class="lightbox-meta" id="lightboxMeta"></div>
+    </div>
+</div>
+<div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
