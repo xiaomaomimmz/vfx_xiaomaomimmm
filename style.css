@@ -564,7 +564,7 @@ ul {
 }
 
 .about .section-content {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .works .section-content {
@@ -983,11 +983,30 @@ ul {
   }
 }
 
+.about-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+.about-img-frame {
+  margin-bottom: 24px;
+}
+
 .about-tools {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 22px;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.about-tools .tool-chip {
+  flex: 0 1 auto;
+  text-align: center;
 }
 
 .tool-chip {
