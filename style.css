@@ -130,6 +130,7 @@ ul {
   z-index: 900;
   padding: 0;
   transition: background var(--trans), backdrop-filter var(--trans), box-shadow var(--trans);
+  width: 100%;
 }
 
 .navbar.scrolled {
@@ -141,11 +142,9 @@ ul {
 .nav-inner {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
-  height: 68px;
-  padding: 16px 40px;
-  max-width: 1380px;
-  margin: 0 auto;
+  height: 56px;
+  padding: 12px 40px;
+  width: 100%;
 }
 
 .nav-logo {
@@ -155,7 +154,6 @@ ul {
   font-family: var(--font-display);
   font-size: 1.1rem;
   letter-spacing: 0.04em;
-  margin-right: auto;
 }
 
 .logo-icon {
@@ -176,8 +174,9 @@ ul {
 
 .nav-links {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 4px;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -215,6 +214,8 @@ ul {
   flex-direction: column;
   gap: 5px;
   padding: 6px;
+  align-items: flex-start;
+  margin-left: 16px;
 }
 
 .nav-burger span {
@@ -536,7 +537,7 @@ ul {
   text-align: left;
   margin-bottom: 40px;
   position: sticky;
-  top: 68px;
+  top: 56px;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
@@ -549,6 +550,23 @@ ul {
   letter-spacing: 0.1em;
   padding-left: 32px;
   line-height: 1.4;
+}
+
+.section-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.about .section-content {
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.works .section-content {
+  padding-top: 50px;
 }
 
 .works-container {
@@ -569,8 +587,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 0;
-  margin: 0 -20px;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .works-arrow {
@@ -603,11 +620,11 @@ ul {
 }
 
 .works-arrow-left {
-  left: -45px;
+  left: -60px;
 }
 
 .works-arrow-right {
-  right: -45px;
+  right: -60px;
 }
 
 .about {
@@ -953,8 +970,8 @@ ul {
 
 .about-text p {
   color: var(--text2);
-  line-height: 1.8;
-  margin-bottom: 18px;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
 
 .about-text p strong {
@@ -1066,7 +1083,7 @@ ul {
   /* Above all sticky sections */
   background: var(--bg);
   border-top: 1px solid var(--border);
-  padding: 36px 0;
+  padding: 24px 0;
 }
 
 .footer-inner {
@@ -1075,6 +1092,28 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
+  width: 100%;
+  padding: 0 32px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 .footer-copy,
