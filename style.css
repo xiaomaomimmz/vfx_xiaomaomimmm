@@ -587,6 +587,7 @@ ul {
   align-items: center;
   gap: 0;
   padding: 0;
+  width: 100%;
 }
 
 .works-arrow {
@@ -733,6 +734,8 @@ ul {
   scroll-behavior: smooth;
   padding: 8px 8px 32px 8px;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 100%;
 }
 
 .work-card {
@@ -752,7 +755,7 @@ ul {
 .work-card:hover {
   border-color: var(--border2);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.02);
 }
 
 
