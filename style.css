@@ -140,10 +140,10 @@ ul {
 
 .nav-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 32px;
   height: 68px;
-  padding: 0 40px;
+  padding: 16px 40px;
   max-width: 1380px;
   margin: 0 auto;
 }
