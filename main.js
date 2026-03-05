@@ -39,21 +39,30 @@ function initNavbar() {
     onScroll();
 
     // Fix navigation links scroll behavior
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-logo');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
-                const navbarHeight = 68; // Navbar height
-                const elementTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                const offsetTop = elementTop - navbarHeight;
-                
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+                if (targetId === 'hero') {
+                    // 直接滚动到顶部
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // 计算目标位置并滚动
+                    const rect = targetElement.getBoundingClientRect();
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const targetPosition = rect.top + scrollTop;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
                 
                 // Close mobile menu if open
                 const mobileNavLinks = document.getElementById('navLinks');
